@@ -8,7 +8,7 @@ In this interface, users can interact with the chatbot by typing messages into a
 
 You can try out the ChatGPT Interface Clone by visiting the following link: [https://interactivejs.netlify.app](https://interactivejs.netlify.app)
 
-![screenshot](/path/to/screenshot.png)
+![screenshot](https://media.discordapp.net/attachments/941494130670985257/1090390844214882325/image.png?width=642&height=325)
 
 ## Getting Started
 
