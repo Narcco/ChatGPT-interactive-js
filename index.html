@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="main-content-navbar">
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <h3>New chat</h3>
+        <div class="plus">
+          <div class="line-0"></div>
+          <div class="line-1"></div>
+        </div>
+      </div>
+      <div id="active">
+        <button class="close-menu-btn" onclick="remove()">x</button>
+      </div>
+    </nav>
+    <div class="all-nothers">
+      <div id="main-menu">
+        <div class="top-menu">
+          <button class="New-chat">
+            <span class="New-chat-plus">+</span>
+            <span>New chat</span>
+          </button>
+          <p class="menu-p">
+            History is temporarily unavailable. We're working to restore this
+            feature as soon as <br />
+            possible.
+          </p>
+        </div>
+        <div class="buttom-menu">
+          <button>
+            <ion-icon name="person-outline"></ion-icon>Upgrade to Plus
+          </button>
+          <button>
+            <ion-icon name="open-outline" style="width: 1.1rem"></ion-icon
+            >updates & FAQ
+          </button>
+          <button>
+            <ion-icon name="log-out-outline" style="width: 1.3rem"></ion-icon
+            >Log out
+          </button>
+        </div>
+      </div>
+      <div class="info-container">
+        <div id="toast"><span>You need to write somthing</span></div>
+        <div class="info" id="info">
+          <h1>ChatGPT</h1>
+          <div class="cards">
+            <div class="card-info">
+              <h2><ion-icon name="sunny-outline"></ion-icon>Examples</h2>
+              <div class="mini-buttons">
+                <button class="mini-button clickable button-1" id="button-1">
+                  "Explain quantum computing in simple terms" →
+                </button>
+                <button class="mini-button clickable button-2" id="button-2">
+                  "Got any creative ideas for a 10 year old’s birthday?" →
+                </button>
+                <button class="mini-button clickable button-3" id="button-3">
+                  "How do I make an HTTP request in Javascript?" →
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <h2><ion-icon name="flash-outline"></ion-icon>Capabilities</h2>
+              <div class="mini-buttons">
+                <button class="mini-button">
+                  Remembers what user said earlier in the conversation
+                </button>
+                <button class="mini-button">
+                  Allows user to provide follow-up corrections
+                </button>
+                <button class="mini-button">
+                  Trained to decline inappropriate requests
+                </button>
+              </div>
+            </div>
+            <div class="card-info card-3" id="card">
+              <h2><ion-icon name="warning-outline"></ion-icon>Limitations</h2>
+              <div class="mini-buttons">
+                <button class="mini-button">
+                  May occasionally generate incorrect information
+                </button>
+                <button class="mini-button">
+                  May occasionally produce harmful instructions or biased
+                  content
+                </button>
+                <button class="mini-button">
+                  Limited knowledge of world and events after 2021
+                </button>
+              </div>
+            </div>
+            <div class="card-bott"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-container">
+          <div class="input">
+            <input type="text" id="footer-input" /><svg
+              id="send-btn"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4 mr-1"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </div>
+          <p>
+            <a>ChatGPT Mar 14 Version.</a> Free Research Preview. Our goal is to
+            make AI systems more natural and safe to interact with. Your
+            feedback will help us improve.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="text/javascript" src="src/purify.js"></script>
+  </body>
+</html>
